@@ -1,0 +1,7 @@
+<h1>Recipes Index</h1>
+<!-- each_with_index div not working %> -->
+<% @recipes.each do |recipe| %>
+  <h3>Name: <%= recipe.name %></h3>
+  <p>Complexity: <%= recipe.complexity %></p>
+  <p>Genre: <%= recipe.genre %></p>
+<% end %>
