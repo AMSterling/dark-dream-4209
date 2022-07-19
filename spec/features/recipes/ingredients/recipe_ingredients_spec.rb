@@ -24,11 +24,11 @@ RSpec.describe 'the recipe ingredient show page' do
     flafel_chickpea = RecipeIngredient.create!(recipe_id: falafel.id, ingredient_id: chickpea.id)
     falafel_oil = RecipeIngredient.create!(recipe_id: falafel.id, ingredient_id: oil.id)
 
-    visit "/recipes/#{spaghetti.id}"
-    save_and_open_page
+    visit "/recipes/#{spaghetti.id}/ingredients"
     expect(page).to have_content('Spaghetti')
-    expect(page).to have_content('Ingredient: Pasta')
-    expect(page).to have_content('Ingredient: Meat')
-    expect(page).to have_content('Ingredient: Cheese')
+    expect(page).to have_content('Pasta')
+    expect(page).to have_content('2')
+    expect(page).to have_content('Meat')
+    expect(page).to have_content('Cheese')
   end
 end
