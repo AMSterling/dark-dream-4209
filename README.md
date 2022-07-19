@@ -45,7 +45,8 @@ Ingredients will have a name and a cost stored as an integer.
 ### User Stories
 
 ```
-User Story 1 of 4 start 9:41 PM
+9:41 PM
+User Story 1 of 4 start
 As a visitor,
 When I visit '/recipes',
 I see a list of recipes with the following information:
@@ -55,13 +56,16 @@ I see a list of recipes with the following information:
 (e.g. "Name: Spaghetti, Complexity: 2, Genre: Italian")
 ```
 ```
-User Story 2 of 4 continue 10:57 AM
+continue 10:57 AM end 12:10?
+User Story 2 of 4
 As a visitor,
 When I visit '/recipes/:id'
 I see a list of the names of the ingredients the recipe has.
 (e.g. "Pasta, Meat, Cheese")
 ```
 ```
+resume 1:12 PM(interrupted by SLC meeting)
+definitely better to not break up into chunks as I lost track of my flow.
 User Story 3 of 4
 As a visitor,
 When I visit '/ingredients'
