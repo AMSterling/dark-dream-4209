@@ -1,7 +1,7 @@
 require 'rails_helper'
 
-RSpec.describe 'the recipe ingredient show page' do
-  it 'shows a list of the recipes ingredients' do
+RSpec.describe 'the recipe ingredient index you never asked for' do
+  it 'shows a list of the recipes and ingredients' do
     spaghetti = Recipe.create!(name: 'Spaghetti', complexity: 2, genre: 'Italian')
     fried = Recipe.create!(name: 'Fried Rice', complexity: 3, genre: 'Chinese')
     falafel = Recipe.create!(name: 'Falafel', complexity: 4, genre: 'Mediterranean')
@@ -27,7 +27,6 @@ RSpec.describe 'the recipe ingredient show page' do
     visit "/recipes/#{spaghetti.id}/ingredients"
     expect(page).to have_content('Spaghetti')
     expect(page).to have_content('Pasta')
-    expect(page).to have_content('2')
     expect(page).to have_content('Meat')
     expect(page).to have_content('Cheese')
   end
